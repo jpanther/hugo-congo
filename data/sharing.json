@@ -63,5 +63,10 @@
     "icon": "xing",
     "title": "sharing.xing",
     "url": "https://www.xing.com/spi/shares/new?url=%s"
+  },
+    "bluesky": {
+    "icon": "bluesky",
+    "title": "sharing.bluesky",
+    "url": "https://bsky.app/intent/compose?text=%s%s"
   }
 }

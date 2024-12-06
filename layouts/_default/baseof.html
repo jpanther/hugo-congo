@@ -12,20 +12,26 @@
   <body
     class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
   >
+    <!-- Add the background SVG -->
+    <div id="background-image"></div>
+
     <div id="the-top" class="absolute flex self-center">
       <a
         class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
         href="#main-content"
-        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
-        >{{ i18n "nav.skip_to_main" }}</a
       >
+        <span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span>
+        {{ i18n "nav.skip_to_main" }}
+      </a>
     </div>
+
     {{ $header := print "partials/header/" .Site.Params.header.layout ".html" }}
     {{ if templates.Exists $header }}
       {{ partial $header . }}
     {{ else }}
       {{ partial "partials/header/basic.html" . }}
     {{ end }}
+
     <div class="relative flex grow flex-col">
       <main id="main-content" class="grow">
         {{ block "main" . }}{{ end }}
@@ -34,7 +40,7 @@
         <div
           class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
           id="to-top"
-          hidden="{{ .Site.Params.footer.showScrollToTop | default true -}}"
+          hidden="{{ .Site.Params.footer.showScrollToTop | default true }}"
         >
           <a
             href="#the-top"

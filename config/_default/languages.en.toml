@@ -38,6 +38,7 @@ title = "Congo"
   #   { instagram = "https://instagram.com/username" },
   #   { keybase = "https://keybase.io/username" },
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { kofi = "https://ko-fi.com/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
   #   { linkedin = "https://linkedin.com/in/username" },
   #   { mastodon = "https://mastodon.instance/@username" },

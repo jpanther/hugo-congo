@@ -113,6 +113,7 @@ Once you've copied the files, your config folder should look like this:
 ```shell
 config/_default/
 ├─ config.toml
+├─ languages.en.toml
 ├─ markup.toml
 ├─ menus.toml
 ├─ module.toml  # if you installed using Hugo Modules

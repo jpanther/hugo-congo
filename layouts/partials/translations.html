@@ -35,7 +35,7 @@
                 <div class="flex flex-grow">
                   {{ if eq $pageLang .Lang }}
                     <a
-                      href="{{ $translation.RelPermalink }}"
+                      href="{{ cond hugo.IsMultihost $translation.Permalink $translation.RelPermalink }}"
                       class="flex w-full items-center justify-between bg-primary-100 px-2 py-1 dark:bg-primary-900"
                       >{{ .LanguageName }}<span
                         class="ms-2 w-6 text-primary-600 dark:text-primary-400"
@@ -44,7 +44,7 @@
                     >
                   {{ else }}
                     <a
-                      href="{{ $translation.RelPermalink }}"
+                      href="{{ cond hugo.IsMultihost $translation.Permalink $translation.RelPermalink }}"
                       class="w-full py-1 pe-10 ps-2 decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
                       >{{ .LanguageName }}</a
                     >

@@ -34,7 +34,7 @@
     "chart.js": "^4.4.7",
     "fuse.js": "^7.0.0",
     "jsdom": "^25.0.1",
-    "katex": "^0.16.11",
+    "katex": "^0.16.14",
     "mermaid": "^11.4.1",
     "prettier": "^3.4.2",
     "prettier-plugin-go-template": "^0.0.15",
